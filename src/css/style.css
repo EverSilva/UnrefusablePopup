@@ -1,186 +1,196 @@
 * {
-    font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
 body {
-    width: 100%;
-    overflow: hidden;
-    background-image: linear-gradient(#ff0000, #fff 60%, pink 80%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(#ff0000, #fff 60%, pink 80%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+button#play {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 1rem;
+  border: 0;
 }
 
 .container {
-    max-width: 1200px;
-    max-height: 960px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1200px;
+  max-height: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: baseline;
 }
 
 #message {
-    position: absolute;
-    display: inline;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3%;
-    color: rgb(41, 41, 41);
-    left: 26%;
-    top: 20%;
-    font-family: "Coming Soon", cursive;
-    font-size: 250%;
+  position: absolute;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+  color: rgb(41, 41, 41);
+  left: 26%;
+  top: 20%;
+  font-family: 'Coming Soon', cursive;
+  font-size: 250%;
 }
 
 .heart-1 {
-    left: 5%;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+  left: 5%;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 .heart-2 {
-    left: 15%;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
+  left: 15%;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
 }
 
 .heart-3 {
-    left: 25%;
-    animation-duration: 2.3s;
-    animation-iteration-count: infinite;
+  left: 25%;
+  animation-duration: 2.3s;
+  animation-iteration-count: infinite;
 }
 
 .heart-4 {
-    left: 35%;
-    animation-duration: 2.9s;
-    animation-iteration-count: infinite;
+  left: 35%;
+  animation-duration: 2.9s;
+  animation-iteration-count: infinite;
 }
 
 .heart-5 {
-    left: 45%;
-    animation-duration: 2.6s;
-    animation-iteration-count: infinite;
+  left: 45%;
+  animation-duration: 2.6s;
+  animation-iteration-count: infinite;
 }
 
 .heart-6 {
-    left: 55%;
-    animation-duration: 2.4s;
-    animation-iteration-count: infinite;
+  left: 55%;
+  animation-duration: 2.4s;
+  animation-iteration-count: infinite;
 }
 
 .heart-7 {
-    left: 65%;
-    animation-duration: 2.7s;
-    animation-iteration-count: infinite;
+  left: 65%;
+  animation-duration: 2.7s;
+  animation-iteration-count: infinite;
 }
 
 .heart {
-    position: relative;
-    display: inline-block;
-    background-color: pink;
-    height: 50px;
-    width: 50px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    animation-name: drop;
-    animation-timing-function: ease-in;
+  position: relative;
+  display: inline-block;
+  background-color: pink;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  animation-name: drop;
+  animation-timing-function: ease-in;
 }
 .heart::after {
-    background-color: pink;
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 0px;
-    left: 25px;
+  background-color: pink;
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 25px;
 }
 .heart::before {
-    content: "";
-    background-color: pink;
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -25px;
-    left: 0px;
+  content: '';
+  background-color: pink;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 0px;
 }
 
 .form {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 400px;
-    width: 90%;
-    transform: translate(-50%, -50%);
-    background: #f9f9f9;
-    text-align: center;
-    border-radius: 20px;
-    overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  background: #f9f9f9;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .form h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .form button {
-    font-size: 1.5rem;
-    border: none;
-    position: absolute;
-    top: 10px;
-    background-color: pink;
-    padding: 4px 20px;
-    border-radius: 20px;
+  font-size: 1.5rem;
+  border: none;
+  position: absolute;
+  top: 10px;
+  background-color: pink;
+  padding: 4px 20px;
+  border-radius: 20px;
 }
 
 #answer {
-    position: relative;
-    width: 100%;
-    height: 280px;
+  position: relative;
+  width: 100%;
+  height: 280px;
 }
 
 #yes {
-    left: calc(50% - 70px);
-    cursor: pointer;
+  left: calc(50% - 70px);
+  cursor: pointer;
 }
 
 #no {
-    left: calc(50% + 70px);
-    cursor: not-allowed;
+  left: calc(50% + 70px);
+  cursor: not-allowed;
 }
 
 @keyframes drop {
-    0% {
-        top: -55px;
-    }
-    100% {
-        top: 900px;
-        opacity: 0.2;
-    }
+  0% {
+    top: -55px;
+  }
+  100% {
+    top: 900px;
+    opacity: 0.2;
+  }
 }
 
 @media only screen and (max-width: 1025px) {
-    body {
-        max-width: 60%;
-    }
-
+  body {
+    max-width: 60%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .heart {
-        height: 25px;
-        width: 25px;
-    }
-    .heart::after {
-        width: 25px;
-        height: 25px;
-        left: 12.5px;
-    }
-    .heart::before {
-        width: 25px;
-        height: 25px;
-        top: -12.5px;
-    }
+  .heart {
+    height: 25px;
+    width: 25px;
+  }
+  .heart::after {
+    width: 25px;
+    height: 25px;
+    left: 12.5px;
+  }
+  .heart::before {
+    width: 25px;
+    height: 25px;
+    top: -12.5px;
+  }
 }
